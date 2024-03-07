@@ -1,5 +1,74 @@
-span{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: xx-large;
+body{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0px;
+}
+a {
+    text-underline-offset: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: color 600ms;
+    text-decoration: none;
+}
+header {
+    color: aliceblue;
+    background-color: black;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+}
+.nav_links {
+    font-family: Helvetica-Bold, Helvetica, sans-serif;
+    width: fit-content;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0px 10px;
+    padding-bottom: 20px;
+}
+.FSection{
+    display: flex;
+    margin: 0px;
+    padding: 5px;
+    background-color: rgb(255, 61, 61);
+}
+.MediaHolder{
+    width: 50%;
+    justify-items: center;
+    align-items: center;
+}
+.TextHolder{
+    margin: 10px;
+    width: 50%;
+    text-align: left;
+    font-size: 20;
+}
+.SSection{
+    padding: 5px;
+    display: flex;
+    margin: 0px;
+    color: aliceblue;
+    background-color: black;
+}
+.nav_links a {
+    margin: 4px;
+}
+#the_heaed {
+    margin-right: 0px;
+    font-family: Helvetica-Bold, Helvetica, sans-serif;
 }
