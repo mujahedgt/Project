@@ -43,24 +43,33 @@ footer {
 }
 .FSection{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 0px;
     padding: 5px;
     background-color: rgb(255, 61, 61);
 }
 .MediaHolder{
-    width: 50%;
+    width: 49%;
+    text-align: center;
     justify-items: center;
     align-items: center;
 }
+.MediaHolder img{
+    width: 500px;
+}
 .TextHolder{
+    direction: rtl;
     margin: 10px;
-    width: 50%;
-    text-align: left;
+    width: 49%;
+    text-align: right;
     font-size: 20;
 }
 .SSection{
     padding: 5px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 0px;
     color: aliceblue;
     background-color: black;
