@@ -48,15 +48,14 @@ footer {
     margin: 0px;
     padding: 5px;
     background-color: rgb(255, 61, 61);
+    justify-content: space-around;
 }
 .MediaHolder{
-    width: 49%;
+    width: 500px;
     text-align: center;
     justify-items: center;
     align-items: center;
-}
-.MediaHolder img{
-    width: 500px;
+    border-radius: 15%;
 }
 .TextHolder{
     direction: rtl;
@@ -73,6 +72,7 @@ footer {
     margin: 0px;
     color: aliceblue;
     background-color: black;
+    justify-content: space-around;
 }
 .nav_links a {
     margin: 4px;
