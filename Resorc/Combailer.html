@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple HTML Compiler</title>
+<style>
+    iframe{
+        width: 50%;
+        height: 100%;
+    }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    resize: none;
+  }
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <textarea id="code" placeholder="Enter your HTML code here"></textarea>
+  <button onclick="compile()">Compile</button>
+</div>
+
+<script>
+  function compile() {
+    var code = document.getElementById('code').value;
+    var output = document.getElementById('output');
+
+
+    try {
+        try{
+        document.body.removeChild(document.getElementById("test"));
+        }catch(error){
+
+        }
+      var iframe = document.createElement('iframe');
+      iframe.id = "test"
+      document.body.appendChild(iframe);
+      var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+      iframeDoc.open();
+      iframeDoc.write(code);
+      output.innerHTML = 'Compiled successfully!';
+    } catch (error) {
+      output.innerHTML = 'Error: ' + error.message;
+    } 
+  }
+</script>
+</body>
+</html>
